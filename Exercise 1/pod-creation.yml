@@ -1,7 +1,7 @@
-api: v1
+apiVersion: v1
 kind: Pod
 metadata:
-	name: web
+  name: web
 	namespace: exercise-01
 	labels:
 		app: web
