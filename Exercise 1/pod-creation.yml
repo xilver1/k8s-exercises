@@ -2,20 +2,20 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: web
-	namespace: exercise-01
-	labels:
-		app: web
-		tier: frontend
+  namespace: exercise-01
+  labels:
+    app: web
+    tier: frontend
 spec:
-	containers:
-		- name: main
-		  image: nginx:1.27
-		  ports:
-		  - containerPort: 80
-		  resources:
-			  requests:
-				  memory: "64Mi"
-				  cpu: "100m"
-			  limits:
-				  memory: "128Mi"
-				  cpu: "250m"
+  containers:
+    - name: main
+      image: nginx:1.27
+      ports:
+      - containerPort: 80
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "100m"
+        limits:
+          memory: "128Mi"
+          cpu: "250m"
